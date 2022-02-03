@@ -1,0 +1,152 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+<form  class="simple_form short-search" asp-controller="Home" asp-action="Search"  method="post">
+    <input name="utf8" type="hidden" value="✓" />
+    <div class="input select optional q_make">
+        <select name="BrandId" id="BrandSelect" class="select optional brandselect">
+            <option value="">Bütün  markalar</option>
+            @foreach (var item in Model.Brands)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+
+        </select>
+    </div>
+    <div class="input string optional q_price">
+        <label class="string optional control-label" for="q_price">@LayoutUI.Price</label>
+        <select name="CurrencyId">
+            @foreach (var item in Model.Currencys)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+        <input class="string optional" placeholder="min." type="text" name="MinPrice" />
+        <input class="string optional" placeholder="maks." type="text" name="MaxPrice" />
+    </div>
+    <div class="auto_loan boolean optional q_loan">
+        <input name="q[loan]" type="hidden" value="0" />
+        <input class="boolean optional" type="checkbox" name="Credit" id="q_loan" />
+        <label class="boolean optional control-label" for="q_loan">@LayoutUI.Credit</label>
+    </div>
+    <div class="input select optional q_region">
+        <select name="CityId" class="select optional">
+            <option value="">Bütün şəhərlər</option>
+            @foreach (var item in Model.Cities)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+    </div>
+    <br />
+    <div class="input string optional q_model">
+        <select id="ModelSelect" name="ModelId">
+            <option value="">Bütün modellər</option>
+        </select>
+
+    </div>
+    <div class="input string optional q_reg_year">
+        <label class="string optional control-label" @*for="q_reg_year"*@>@LayoutUI.Year</label>
+        <input class="string optional" placeholder="min." type="text" name="MinYear" @*id="q_year_from"*@ />
+        <input class="string optional" placeholder="maks." type="text" name="MaxYear" @*id="q_year_to"*@ />
+    </div>
+    <div class="auto_barter boolean optional q_barter">
+    <input name="q[barter]" type="hidden" value="0">
+    <input name="Change" class="boolean optional" type="checkbox" @*value="1"*@ @*name="q[barter]"*@ id="q_barter">
+    <label class="boolean optional control-label" for="q_barter">Barter</label>
+    </div>
+
+    <button class="btn-search" type="submit" >@LayoutUI.Search</button>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+<div class="page-content">
+
+    <div class="products-container index-products-container">
+        
+        <div id="Productcontainer"class="products">
+            @foreach (var item in Model.Announcements.Items)
+            {
+                var imagepath = item.Photos.FirstOrDefault().ImagePath;
+                <div class="products-i vipped salon">
+                    <a class="products-i__link" target="_blank" asp-controller="Home" asp-action="Details" asp-route-id="@item.Id"></a>
+                    <a class="hide js-unbookmark-item-4234040" data-remote="true" rel="nofollow" data-method="delete" href="/autos/4234040-land-rover-discovery/bookmarks"><div class="bookmarking added"></div></a>
+                    <div class="products-i__top">
+                        <img src="~/assets//Uploads/Carphotos/@imagepath" />
+                        <div class="products-i__info"></div>
+                    </div>
+                    <div class="products-i__bottom">
+                        <div class="products-i__price products-i__bottom-text">
+                            <div class="product-price">@item.Price  @item.Currency.Name</div>
+                        </div>
+                        <div class="products-i__name products-i__bottom-text">@item.Brand.Name @item.Model.Name</div>
+                        <div class="products-i__attributes products-i__bottom-text">@item.Year @item.EngineVolume L,@item.March @item.Distance.Name</div>
+                        <div class="products-i__datetime">@item.City.Name, @item.CreatedDate</div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+</div>
+@*q<section id="section-makes" class="">
+    <div class="section-title"><p class="section-title_name">Bütün markalar</p></div>
+    <div class="makes-container">
+        <div class="makes--row">
+            <div class="makes-i">
+                <p class="makes--amount">3</p>
+                <a class="makes--name" href="/makes/280-abarth">Abarth</a>
+            </div>
+        </div>
+    </div>
+
+</section>*@
+
+
+<div class="pagination-container">
+
+    @Model.Announcements.GetPagenation(Url, "Index")
+
+</div>
+@section addjs{
+    <script src="~/Libs/jquery/jquery.js"></script>
+    <script>
+        
+        $(document).ready(function () {
+            $('#BrandSelect').on('change', function (e) {
+                var optionSelected = $("option:selected", this);
+                var valueSelected = this.value;/*s*/
+                $.ajax({
+                    url: '/Home/SearchModel/' + valueSelected,
+                    type: 'get',
+                    success: function (response) {
+
+                        $("#ModelSelect").find('option').not(':first').remove();
+                        for (var model of response) {
+                            var opt = document.createElement('option');
+                            opt.value =model.id;
+                            opt.innerHTML = model.name;
+                            console.log($("#ModelSelect"));
+                            document.getElementById("ModelSelect").appendChild(opt);
+                        }
+                    },
+                    error: function (response) {
+
+                    }
+                });
+});
+        })
+
+    </script>
+}

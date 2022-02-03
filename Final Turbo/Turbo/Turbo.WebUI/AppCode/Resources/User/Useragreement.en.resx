@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>User agreement</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>The Administration reserves the right to unilaterally change the terms of this Agreement at any time.</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>If the User does not agree with the terms of this Agreement or the amendments made to it, he / she shall refuse to access the Service and stop using the Services.</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Thus, the Administration offers users services for placing and searching ads using the services of the Service.</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>The provision of individual services may be governed by specific rules and / or agreements.</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>The User accepts the provision that all materials and services of the Service or any part thereof may be accompanied by advertising. The User agrees that any Administration
+            is not responsible and has no liability for such advertising.</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Registration in the service is voluntary. Upon registration in the Service, the User accesses additional services of the Service. Administration confirms the information provided by the User at the time of registration and
+            reserves the right to request supporting documents at any time.</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>The user undertakes to keep his password secret. The User can use his / her e-mail address and password for actions, as well as actions performed in the User's Personal Cabinet.
+            is responsible for.</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>The Administration reserves the right to use special technical solutions to verify the accuracy of the information provided by Users during registration and / or authorization.</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>The Administration cannot guarantee that the User is actually provided, and that the information provided by the User during registration with the Service is true.</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>The user is advised to communicate with possible counterparties using all available tools in the Service.</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>General conditions</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>The Administration reserves the right, at its sole discretion, to suspend the User's access to services that violate the terms of this Agreement. </value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>The User confirms that he has read all the clauses of this Agreement and accepts them unconditionally in full.</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>Last update date</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>That Agreement</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>For the purposes of this User Agreement, the following terms and definitions apply in the following sense:</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Any terms and concepts used in this User Agreement and not reflected in the "Terms and Designations" clause shall be explained in accordance with the meaning arising from the text of the User Agreement.
+            will be done. In the event of any disagreement as to the interpretation of the term or designation used in the User Agreement, the interpretation established by the Administration shall apply.</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>The use of the Services and materials is governed by applicable law and this Agreement.</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>This Agreement is a public offer.</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>By using the Services, the User enters into this Agreement and accepts the terms and obligations to comply with its instructions for the use of the Services.</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>When using the Service on behalf of the Company, such Company accepts this Agreement and its terms.</value>
+  </data>
+</root>

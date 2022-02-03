@@ -1,0 +1,27 @@
+﻿@model  Announcement 
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="main-container" data-lotriver-wrapper="">
+    <div class="page-content">
+        <div class="product">
+                    <div class="title">
+                        Elanı silmək<div class="close-reveal-modal"></div>
+                    </div>
+                    <div class="reveal-modal--content">
+                        <div class="action-form-container">
+                            <p>Zəhmət olmasa, elanın silinməsini təsdiqləmək üçün PIN-şifrəni daxil edin.</p>
+                            <p>PIN-şifrəsi elanı derc etdiyiniz zaman qeyd etmisiniz.</p>
+                            <form asp-action="Delete" class="confirm" method="post">
+                                <label>Elanın PIN-şifrəsi:</label>
+                                <input type="text" asp-for="Pin" >
+                                <button name="button" type="submit" class="submit">Təsdiq et</button>
+                            </form>
+                        </div>
+                    </div>
+                
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>Məxfilik siyasəti</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Şəxsi məlumatların işlənməsinin məqsədləri, o cümlədən, aşağıdakılardır:</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Servis İstifadəçilər haqqında növbəti informasiyanı toplayır:</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Servisdən istifadə zamanı Administrasiyaya İstifadəçinin daxil etdiyi şəxsi informasiyanı göstərir və ya başqa üsulla açır. Belə informasiya, xüsusi halda (lakin, məhdudlaşdırılmadan), İstifadəçinin adı
+            və soyadı, elektron poçt ünvanı və parolu, telefon nömrəsi, İstifadəçinin yerləşdiyi yer, həmçinin ünvanı ola bilər. Əgər İstifadəçi sosial şəbəkənin profili vasitəsilə daxil olursa, Servis həmçinin belə sosial şəbəkənin
+            profilində yerləşdirilmiş informasiyanı toplaya bilər. İstifadəçi ona verilmiş informasiyaya görə məsuliyyət daşıyır, halbuki Servis İnternetdə İstifadəçinin məlumatlarının yayılması və dərc edilməsi üçün kanalı verir.</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Servis, həmçinin də Administrasiya, irqi və ya etnik mənşə haqqında məlumatları, siyasi, dini və dünyagörüşü məsləklər, siyasi partiyalara və həmkarlar ittifaqlarına üzvlük, cinayət cəzasına məhkumluqlar,
+            həmçinin də sağlamlığa, cinsiyyət həyatına aid olan məlumatları, biometrik və ya genetik məlumatları toplamır və işləmir.</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Servis və Administrasiya Servisə aidiyyəti olmayan üçüncü şəxslərə İstifadəçilər tərəfindən təqdim edilmiş heç bir şəxsi və ya başqa məlumatları, İstifadəçinin belə icazəni verdiyi hal istisna olmaqla,
+            həmçinin də İstifadəçi razılaşması ilə və ya qanunvericiliklə nəzərdə tutulmuş hallarda, vermir.</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>İstifadəçi haqqında şəxsi məlumatları silmək üçün  ilə əlaqə saxlamalısınız.</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Cookies, veb-mayaklar, və oxşar texnologiyalar</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>Servis informasiyanın saxlanılması üçün cookies fayllarından, veb-mayaklardan və başqa oxşar texnologiyalardan istifadə edə bilər. Bu fayllar veb-saytın və onun əlavələrinin istifadəsini yüngülləşdirmək
+            məqsədi ilə, Servis xidmətlərinin keyfiyyətinin artırılması məqsədi ilə (həmçinin təhlükəsizlik), həmçinin reklam məqsədi ilə istifadə olunur.</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Cookies-ə və oxşar texnologiyalara icazə olunmamış girişin qarşısını almaq üçün Administrasiya bütün təhlükəsizlik tədbirlərini görür. İstifadəçi analoji təhlükəsizlik tədbirlərini görməyi öhdəsinə götürür.
+            Administrasiya zəmanət verir ki, yalnız Administrasiya və/və ya Servis xidmətlərinin səlahiyyətli təchizatçıları cookies məlumatlarına girişə malikdirlər.</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Servisin xidmətlərinin təchizatçıları Servisin müxtəlif aspektləri ilə kömək edən şirkətlərdir. Administrasiya Servisin uyğun olan xidmətlərinin İstifadəçiyə verilməsi, həmçinin də Servisin bilavasitə
+            fəaliyyəti ilə bağlı başqa məqsədlər üçün xidmətlərin bəzi səlahiyyətli təchizatçılarından istifadə edir. Xidmətlərin belə təchizatçıları həmçinin Servisin (kənar cookies) xidmətləri vasitəsilə cookies-i İstifadəçinin qurğusunda
+            yerləşdirə bilərlər. Onlar həmçinin başqa informasiyanı, məsələn, IP-ünvan və ya başqa eyniləşdiriciləri, toplaya bilərlər.</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Məxfilik siyasəti</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Servisin yuxarıda göstərilmiş texnologiyalardan istifadə vasitəsilə toplayıb və saxladığı istənilən informasiyadan İstifadəçinin icazəsi ilə istifadə olunur.</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Məxfiliyin siyasətinə dəyişikliklərin daxil etməsi</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>Administrasiya Məxfilik Siyasətinə dəyişikliklər edə, silə və ya qaydalarını yeniləyə bilər.</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>Əgər İstifadəçi daxil edilmiş dəyişikliklərlə razı deyilsə, o Servisdən istifadəni dayandırmalıdır. Əgər İstifadəçi Servisdən istifadə etməyə davam edirsə, o razılaşır və bütün dəyişiklikləri və Məxfilik
+            siyasətinin yeni redaksiyasını bütövlükdə qəbul edir.</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Hazırkı məxfilik Siyasəti turbo.az Servisin İstifadəçi Razılaşmasının ayrılmaz hissəsidir.</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Hazırkı məxfilik Siyasəti İstifadəçinin şəxsi məlumatlarının alması, saxlaması, işlənməsi, istifadəsi, açılması və müdafiəsi qaydasını müəyyən edir.</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>İstifadəçilərin şəxsi məlumat bazası Administrasiyanın ünvanı üzrə yerləşir.</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Şəxsi məlumatlar Bazasının sərəncamçısı Administrasiyadır – “DİGİTAL CLASSİFİEDS MMC” şirkətidir.</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Elanın dərc edilməsi üçün formanı dolduran zaman və ya Servisdə İstifadəçinin qeydiyyatı zamanı, və ya göndərmələrə abunə yazılma zamanı, həmçinin də Servisdən istifadənin başqa hallarında, İstifadəçi
+            Administrasiyaya məlumatları və şəxsi məlumatları verir. Məlumatın toplanması həmçinin Servisin İstifadəçilərinin sorğularının keçirilməsi yolu ilə həyata keçirilə bilər. İstifadəçilərin sorğularında iştirak İstifadəçilər
+            icazəsi ilə həyata keçirilir.</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>İstifadəçi Servisə özü haqqında şəxsi məlumatların və istənilən başqa informasiyanın verilməsi haqqında sərbəst və könüllü qərar qəbul edir, həmçinin də bununla belə şəxsi məlumatların və informasiyanın
+            Administrasiya tərəfindən işlənməsinə, işlənməsi üçün onların Administrasiyanın tapşırığı ilə hərəkət edən başqa İstifadəçilərə və/və ya üçüncü şəxslərə ötürülməsinə öz razılığını bildirir.</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Şəxsi məlumatların işlənməsi istənilən hərəkət və ya hərəkətlərin toplanma, qeydiyyat, yığım, saxlama, uyğunlaşma, dəyişiklik, yeniləmə, istifadə və yayılma kimi məcmusudur (yayılma, reallaşdırma, ötürülmə,
+            həmçinin xaricə) və şəxsi məlumatların, həmçinin informasiya (avtomatlaşdırılmış) sistemlərinin istifadəsi ilə məhv edilməsidir.</value>
+  </data>
+</root>

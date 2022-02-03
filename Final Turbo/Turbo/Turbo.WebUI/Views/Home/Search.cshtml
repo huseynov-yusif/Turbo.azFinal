@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Announcement>
+@{
+    ViewData["Title"] = "Search";
+}
+<div class="page-content">
+
+    <div class="products-container index-products-container">
+
+        <div id="Productcontainer" class="products">
+            @foreach (var item in Model)
+            {
+                var imagepath = item.Photos.FirstOrDefault()?.ImagePath;
+                <div class="products-i vipped salon">
+                    <a class="products-i__link" target="_blank" asp-controller="Home" asp-action="Details" asp-route-id="@item.Id"></a>
+                    <a class="hide js-unbookmark-item-4234040" data-remote="true" rel="nofollow" data-method="delete" href="/autos/4234040-land-rover-discovery/bookmarks"><div class="bookmarking added"></div></a>
+                    <div class="products-i__top">
+                        <img src="~/assets//Uploads/Carphotos/@imagepath" />
+                        <div class="products-i__info"></div>
+                    </div>
+                    <div class="products-i__bottom">
+                        <div class="products-i__price products-i__bottom-text">
+                            <div class="product-price">@item.Price  @item.Currency.Name</div>
+                        </div>
+                        <div class="products-i__name products-i__bottom-text">@item.Brand.Name @item.Model.Name</div>
+                        <div class="products-i__attributes products-i__bottom-text">@item.Year @item.EngineVolume L,@item.March @item.Distance.Name</div>
+                        <div class="products-i__datetime">@item.City.Name, @item.CreatedDate</div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+</div>
+

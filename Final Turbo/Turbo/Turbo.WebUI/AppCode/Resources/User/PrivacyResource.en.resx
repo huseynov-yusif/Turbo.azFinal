@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>The purposes of the processing of personal data are, in particular:</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>The Service collects the following information about Users:</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Displays or otherwise discloses personal information entered by the User to the Administration while using the Service. Such information, in a special case (but not limited to), is the username
+            and last name, e-mail address and password, phone number, location of the User, as well as address. If the User logs in through a social network profile, the Service will also use such a social network
+            may collect information posted on your profile. The User is responsible for the information provided to him, while the Service provides a channel for the dissemination and publication of User information on the Internet.</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>The service also includes information on the Administration, racial or ethnic origin, political, religious and ideological backgrounds, membership in political parties and trade unions, criminal convictions,
+            nor does it collect or process information related to health, sexuality, biometric or genetic information.</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Service and Administration No personal or other information provided by Users to third parties not related to the Service, except as permitted by the User.
+            as well as in cases stipulated by the User Agreement or legislation.</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>You must contact us to delete personal information about the user.</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Cookies, web beacons, and similar technologies</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>The service may use cookies, web beacons and other similar technologies to store information. These files facilitate the use of the website and its attachments
+            It is used for the purpose of improving the quality of services (as well as security), as well as for advertising purposes.</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>The Administration takes all necessary security measures to prevent unauthorized access to cookies and similar technologies. The user undertakes to take similar security measures.
+            The Administration guarantees that only authorized Administration and / or Service Providers have access to cookies.</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Service providers are companies that help with various aspects of the Service. Administration Provision of the relevant services of the Service to the User, as well as directly to the Service
+            uses some authorized service providers for other purposes related to its activities. Such service providers also use cookies (external cookies) to store cookies on the User's device.
+            can place. They may also collect other information, such as an IP address or other identifiers.</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Any information collected and stored by the Service using the above technologies is used with the permission of the User.</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Making changes to the privacy policy</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>The Administration may modify, delete or update the Privacy Policy.</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>If the User does not agree with the changes, he / she must stop using the Service. If the User continues to use the Service, he agrees and agrees to all changes and Privacy
+            adopts the new version of the policy as a whole.</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>The current Privacy Policy is an integral part of the turbo.az Service User Agreement.</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>This Privacy Policy sets out the procedures for obtaining, storing, processing, using, disclosing and protecting the User's personal information.</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>The personal database of users is located at the address of the Administration.</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>The Administrator of the Personal Database is the Administration - DIGITAL CLASSIFIEDS LLC.</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>When filling out the form for publication of the announcement or during the registration of the User in the Service, or when subscribing to shipments, as well as in other cases of using the Service, the User
+            Provides information and personal information to the administration. Data collection can also be done through surveys of Service Users. Participate in user surveys Users
+            carried out with permission.</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>The User makes a free and voluntary decision to provide the Service with personal information and any other information, as well as personal data and information.
+            Consents to the processing by the Administration and their transfer to other Users and / or third parties acting on behalf of the Administration for processing.</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>The processing of personal data is the aggregation of any action or action, such as collection, registration, collection, storage, adaptation, modification, update, use and dissemination (dissemination, realization, transmission,
+            as well as abroad) and the destruction of personal data, as well as the use of information (automated) systems.</value>
+  </data>
+</root>

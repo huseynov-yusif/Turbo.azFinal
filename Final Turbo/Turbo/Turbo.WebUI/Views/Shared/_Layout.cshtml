@@ -1,0 +1,107 @@
+﻿<html class="locale-az windows-os font-source-sans fonts-loaded" lang="az">
+<head>
+    <title>Turbo.Az - Avtomobilləri burada seçirlər</title>
+    <meta charset="utf-8" />
+    <link href="~/assets/Admin/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/assets/favicons/favicon-192x192-bfda602634a6b895afb1690b599d49d14372c10b00a6d339d7407251621dcc1a.png" rel="apple-touch-icon" sizes="192x192" />
+    <link href="~/assets/favicons/favicon-192x192-bfda602634a6b895afb1690b599d49d14372c10b00a6d339d7407251621dcc1a.png" rel="icon" sizes="192x192" type="image/png" />
+    <link color="#ae050a" href="~/assets/favicons/favicon-aca77295b7a8c65dca8432efe90a059c006abc27d7a23a90fb34a38a865be0f2.svg" rel="mask-icon" />
+    @*<meta content="~/assets/browserconfig-6d2218bc48cb7f0a786808a0933a28325922859eccf4604ede4fc7814e853394.xml" name="msapplication-config" />*@
+    <meta property="og:image" content="~/assets/turbo-logo-az-24c9ce8421aec1428f697bce5033b652750bbc9262031438fea7f35fc37f8f84.png" />
+    <meta property="og:description" content="Turbo.az - onlayn avtomobil bazarı. Avtomobili almaq və ya satmaq üçün Turbo.az-a daxil olun!  Yeni və işlənmiş avtomobillər, avtosalonlar, avtoxəbərlər." />
+    <meta content="Turbo.az - onlayn avtomobil bazarı. Avtomobili almaq və ya satmaq üçün Turbo.az-a daxil olun!  Yeni və işlənmiş avtomobillər, avtosalonlar, avtoxəbərlər." name="description" />
+    <link rel="stylesheet" @*media="all"*@ href="~/assets/application-46c82edfd96cf1f5e601dc541cb77478764fcefb081454142dfc9b05dd8e6839.css" />
+    <link rel="stylesheet" @*media="print"*@ href="~/assets/print-68c02613d7bc11d2322fa97ceba839c3174904fe3896536e56c7bca936218511.css" />
+    <link href="~/assets/application-f29f7cb773d966fdd320590446f84fbfbe311fb4cc222c3229e8035326e593e5.css" rel="stylesheet" />
+
+    @RenderSection("addcss", required: false)
+</head>
+<body class="layout_home layout_home_index" style="padding-top: 0px;">
+
+    <div class="body-inner">
+
+        <div class="header" data-lotriver-header="">
+            <div class="header-bar-container">
+                <div class="header-bar">
+                    <a class="header-bar-i header-bar-i_home" asp-controller="home" asp-action="index"></a>
+                    <div class="header-bar-i header-bar-i_support-phone"><span class="header-bar-i_support-phone-title">@LayoutUI.Supportservice: </span><span class="header-bar-i_support-phone-list">(051) 394-36-96; (077) 717-02-08</span></div>
+                    <div class="header-bar-right">
+                        <a class="header-bar-i" data-lang="az" href="#">AZE</a>
+                        <a class="header-bar-i" data-lang="en" href="#">ENG</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="header-tabs-container">
+                <div class="header-tabs">
+                    <a target="_blank" class="header-tabs-i header-tabs-i_bina" href="https://bina.az/?utm_source=turboaz&amp;utm_medium=desktop-nav&amp;utm_campaign=only-logo">bina.az</a>
+                    <a target="_blank" class="header-tabs-i header-tabs-i_tap" href="https://tap.az/?utm_source=turboaz&amp;utm_medium=desktop-nav&amp;utm_campaign=only-logo">tap.az</a>
+                    <a target="_blank" class="header-tabs-i header-tabs-i_boss" href="https://boss.az/?utm_source=turboaz&amp;utm_medium=desktop-nav&amp;utm_campaign=only-logo">boss.az</a>
+                </div>
+            </div>
+            <div class="header-top-nav">
+                <div class="nav">
+                    <a class="nav-i" asp-controller="home" asp-action="index">@LayoutUI.Allannouncements</a>
+                    <a class="header-new-btn" asp-controller="home" asp-action="create"><span>@LayoutUI.Createannouncement</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="main-container" data-lotriver-wrapper="">
+            @RenderBody()
+        </div>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-info">
+                    <p class="footer-agreement"><a target="_blank" asp-controller="home"asp-action="useragreement">@LayoutUI.Useragreement</a></p>
+                    <p class="footer-agreement">
+                        <a target="_blank" asp-controller="home"asp-action="rules">@LayoutUI.Rules</a>
+                        <a class="law" target="_blank" asp-controller="home"asp-action="low">@LayoutUI.Law</a>
+                    </p>
+                    <p class="footer-agreement"><a target="_blank" asp-controller="home"asp-action="privacy">@LayoutUI.PrivacyPolicy</a></p>
+                    @*<p class="copyright">
+                        <span>©</span>2006-2021 Digital Classifieds MMC.<br />
+                        VÖEN: 1405631661
+                    </p>*@
+                    <p class="footer-phone">
+                        <svg class="icon-svg icon-svg--phone" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#phone"></use></svg>(051) 394-36-96; 
+                    </p>
+                    @*<p class="footer-email"><a href="mailto:turbo@turbo.az">turbo@turbo.az</a></p>*@
+                    @*<p class="footer-mobile"><a href="/?mobile_site=1">Mobil versiyası</a></p>*@
+                </div>
+                <div class="footer-text">
+                    <p class="responsibility">@LayoutUI.Administration</p>
+                    <p class="ownership">
+                        @LayoutUI.Material
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    @RenderSection("addjs", required: false)
+
+    <script src="~/Libs/jquery/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-lang]').click(function (e) {
+                e.preventDefault();
+                let path = `${window.location.pathname}${window.location.search}`;
+                let selectlang = $(e.currentTarget).data('lang');
+                let result = /\/(az|en)?\/?(.*)?/.exec(path);
+                if (result != null && result[2] != undefined) {
+                    path = `/${selectlang}/${result[2]}`;
+                }
+                else if (result != null) {
+                    path = `/${selectlang}`;
+                }
+                window.location.href = path;
+                console.log(path);
+                console.log(selectlang);
+            });
+        });
+    </script>
+</body>
+</html>

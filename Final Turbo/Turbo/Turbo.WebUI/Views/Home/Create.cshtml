@@ -1,0 +1,260 @@
+﻿@model AnnouncementCreateCommand
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="main-container" data-lotriver-wrapper="">
+    <div class="section-title section-title_top">
+        <p class="section-title_name">ELAN YERLƏŞDİRMƏK</p>
+
+    </div>
+    <div class="new-product">
+        <div class="limits-container"></div>
+        <div class="form-header">
+            <div class="form-title">ELAN</div>
+            <div class="new-product--notice">
+                <ul>
+                    <li>Üç ay ərzində bir nəqliyyat vasitəsi yalnız bir dəfə pulsuz dərc oluna bilər.</li>
+                    <li>Üç ay ərzində təkrar və ya oxşar elanlar (marka/model, rəng) ödənişlidir.</li>
+                </ul>
+            </div>
+        </div>
+        <form enctype="multipart/form-data" class="simple_form new_auto" asp-controller="home" asp-action="create" method="post">
+            <input name="utf8" type="hidden" value="✓" /><input type="hidden" name="authenticity_token" value="AGOsks3S9VPk7C9PNdKhCOErhWcNGl5JZCXmx5-_Pd5-r6sPk21fP8Vby2XWoQH2T94-VoPS5icSBmp93Gllxg" />
+            <div class="new-product-i">
+                <div class="left-side">
+                    <div class="input string required auto_make_id">
+                        <label class="string required control-label" for="auto_make_id">Marka <abbr title="required">(*)</abbr></label>
+                        <select asp-for="@Model.Announcement.BrandId">
+                            <option value="">Seçin</option>
+                            @foreach (var item in Model.Brands)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+
+                            }
+
+
+                        </select>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="input select required auto_fuel_type">
+                        <label class="select required control-label" for="auto_fuel_type_id">Yanacaq növü <abbr title="required">(*)</abbr></label>
+                        <select class="select required" asp-for="@Model.Announcement.FuelId">
+                            <option value=""></option>
+                            @foreach (var item in Model.Fuels)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="new-product-i">
+                <div class="left-side">
+                    <div class="input string required auto_model">
+                        <label class="string required control-label" for="auto_model">Model <abbr title="required">(*)</abbr></label>
+                        <select asp-for="@Model.Announcement.ModelId">
+                            <option value="">Seçin</option>
+                            @foreach (var item in Model.Models)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="input select required auto_gear">
+                        <label class="select required control-label" for="auto_gear_id">Ötürücü <abbr title="required">(*)</abbr></label>
+                        <select class="select required" asp-for="@Model.Announcement.SeatId">
+                            <option value=""></option>
+                            @foreach (var item in Model.Seats)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="new-product-i">
+                <div class="left-side">
+                    <div class="input select required auto_category">
+                        <label class="select required control-label" for="auto_category_id">Ban növü <abbr title="required">(*)</abbr></label>
+                        <select class="select required" asp-for="@Model.Announcement.BanId">
+                            <option value=""></option>
+                            @foreach (var item in Model.Bans)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="input select required auto_transmission">
+                        <label class="select required control-label" for="auto_transmission_id">Sürətlər qutusu <abbr title="required">(*)</abbr></label>
+                        <select class="select required" asp-for="@Model.Announcement.SpeedBoxId">
+                            <option value=""></option>
+                            @foreach (var item in Model.SpeedBox)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="new-product-i">
+                <div class="left-side tooltips-input">
+                    <label class="integer required control-label" for="auto_mileage">Yürüş <abbr title="required">(*)</abbr></label>
+                    <input step="10000" max="" class="numeric integer required" min="0" type="number" asp-for="@Model.Announcement.March" />
+                    <br /> <select class="select required" asp-for="@Model.Announcement.DistanceId">
+                        <option value=""></option>
+                        @foreach (var item in Model.Distances)
+                        {
+                            <option value="@item.Id">@item.Name</option>
+
+                        }
+                    </select>
+                </div>
+                <div class="right-side">
+                    <div class="input select required auto_reg_year">
+                        <label class="select required control-label" for="auto_reg_year">Buraxılış ili <abbr title="required">(*)</abbr></label>
+                        <input class="numeric integer required" min="1" max="3000" type="number" step="1" asp-for="@Model.Announcement.Year" />
+                    </div>
+                </div>
+            </div>
+            <div class="new-product-i">
+                <div class="left-side">
+                    <div class="input select required auto_color">
+                        <label class="select required control-label" for="auto_color_id">Rəng <abbr title="required">(*)</abbr></label>
+                        <select class="select required" asp-for="@Model.Announcement.ColorId">
+                            <option value=""></option>
+                            @foreach (var item in Model.Colors)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="input select required auto_engine_volume">
+                        <label class="select required control-label" for="auto_engine_volume">Mühərrikin həcmi, sm<sup>3</sup> <abbr title="required">(*)</abbr></label>
+                        <input class="numeric integer required" min="1" max="1000" type="number" step="1" asp-for="@Model.Announcement.EngineVolume" />
+                    </div>
+                </div>
+            </div>
+            <div class="new-product-i">
+                <div class="left-side tooltips-input">
+                    <label class="non_null required control-label" for="auto_price">Qiymət <abbr title="required">(*)</abbr></label>
+                    <input class="numeric non_null required" min="500" max="2147483647" type="number" step="any" asp-for="@Model.Announcement.Price" />
+                    <div class="tooltips"><div class="tooltips-body">Qiymət bölməsində maşının tam qiyməti yazılmalıdır. Kreditin ilkin ödəniş məbləği yalnız "Əlavə məlumat" bölməsində qeyd edilməlidir</div></div>
+                    <input type="hidden" />
+                    <br /> <select asp-for="@Model.Announcement.CurrencyId">
+                        <option value=""></option>
+                        @foreach (var item in Model.Currencys)
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    </select>
+                </div>
+                <div class="right-side">
+                    <div class="input integer required auto_power">
+                        <label class="integer required control-label" for="auto_power">Mühərrikin gücü, a.g. <abbr title="required">(*)</abbr></label>
+                        <input class="numeric integer required" min="1" max="1000" type="number" step="1" asp-for="@Model.Announcement.EngineStrong" />
+                    </div>
+                </div>
+            </div>
+            <div class="input boolean optional auto_loan">
+                <input name="auto[loan]" type="hidden" value="0" /><input class="boolean optional" type="checkbox" value="1" asp-for="@Model.Announcement.Credit" />
+                <label class="boolean optional control-label" for="auto_loan">Kreditdədir</label>
+            </div>
+            <div class="input boolean optional auto_barter">
+                <input name="auto[barter]" type="hidden" value="0" /><input class="boolean optional" type="checkbox" value="1" asp-for="@Model.Announcement.Change" id="auto_barter" />
+                <label class="boolean optional control-label" for="auto_barter">Barter mümkündür</label>
+            </div>
+            <div class="input text optional auto_description field_with_hint">
+                <label class="text optional control-label" for="auto_description">Əlavə məlumat</label><textarea class="text optional" asp-for="@Model.Announcement.Description"></textarea>
+                <span class="hint">telefon nömrələri qeyd etmək qadağandır</span>
+            </div>
+
+            <div class="input pond pond-grid">
+                <label for="" class="string optional control-label">Şəkil</label>
+
+                <div class="col-md-8">
+                    <div style="width: 600px;" class="imager-container" id="viewer1" name="images">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="photo-rules">
+                <ul class="rule_list">
+                    <li class="rule_item">Şəkillər Azərbaycan Respublikasının ərazisində çəkilməlidir.</li>
+                    <li class="rule_item">Şəkillər yaxşı keyfiyyətdə olmalıdır. Nəqliyyat vasitəsi yaxşı işıqlandırılmış olmalı, şəkillərin üzərində loqotip və digər yazılar olmamalıdır. Skrinşotlar qəbul olunmur.</li>
+                </ul>
+            </div>
+            <div class="new-product--title">Əlaqə</div>
+            <div class="new-product-alert">Elan dərc olunduqdan sonra əlaqə məlumatları ilə bağlı heç bir dəyişiklik həyata keçirilmir.</div>
+            <div class="new-product-i">
+                <div class="left-side seller-information">
+                    <div class="input string required auto_seller_name">
+                        <label class="string required control-label" for="auto_seller_name">
+                            Adınız <abbr title="required">(*)</abbr>
+                        </label><input class="string required" type="text" asp-for="@Model.User.Name" />
+                    </div>
+                    <div class="input select required auto_region">
+                        <label class="select required control-label" for="auto_region_id">Şəhər <abbr title="required">(*)</abbr></label>
+                        <select class="select required" asp-for="@Model.Announcement.CityId">
+                            <option value=""></option>
+                            @foreach (var item in Model.Citys)
+                            {
+
+                                <option value="@item.Id">@item.Name</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="input email required auto_seller_email field_with_hint">
+                        <label class="email required control-label" for="auto_seller_email">E-mail <abbr title="required">(*)</abbr></label>
+                        <input class="string email required" type="email" asp-for="@Model.User.Email" /><span class="hint">saytda göstərilmir</span>
+                    </div>
+                    <div class="input email required auto_seller_email field_with_hint">
+                        <label class="email required control-label" for="auto_seller_email">Pin daxil edin (UNUTMA) <abbr title="required">(*)</abbr></label>
+                        <input class="string email required" type="number" asp-for="@Model.Announcement.Pin" /><span class="hint">saytda göstərilmir</span>
+                    </div>
+                    <div class="input tel required auto_phones">
+                        <label class="tel required control-label" for="auto_phones">Telefon nömrəsi <abbr title="required">(*)</abbr></label>
+                        <input class="string tel required js-phones-input" multiple="multiple" placeholder="(000) 000-00-00" type="tel" asp-for="@Model.User.Phone" />
+                    </div>
+                    <button type="submit" class="submit-button">Elan yerləşdir</button>
+                </div>
+                <div class="right-side"></div>
+            </div>
+            <div class="new-product--confirm-rules">
+                Elan yerləşdirərək, siz Turbo.az-ın <a target="_blank" asp-controller="home" asp-action="useragreement">İstifadəçi razılaşması</a> və <a target="_blank" asp-controller="home" asp-action="rules">Qaydaları</a> ilə razı olduğunuzu təsdiq edirsiniz
+            </div>
+        </form>
+    </div>
+</div>
+@section addjs{
+    <script src="~/Libs/jquery/jquery.js"></script>
+    <script src="~/Libs/multiple-imager-js/js/imager.js"></script>
+    <script src="~/Libs/ckeditor5/ckeditor.js"></script>
+    <script src="~/Libs/tab-control/tab-control.js"></script>
+    <script>
+        $('#viewer1').imgadd({
+            tnWidth: '120px',
+            tnHeight: '120px',
+            fontSize: '55px',
+            plusInnerHtml: '',
+            plusBtnClass: undefined
+        });
+    </script>
+}
+@section addcss{
+    <link href="~/Libs/multiple-imager-js/css/imager.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Libs/tab-control/tab-control.css" />
+}

@@ -1,0 +1,130 @@
+﻿@model Announcement
+@{
+    ViewData["Title"] = "Details";
+}<div class="main-container" data-lotriver-wrapper="">
+    <div class="page-content">
+        <div class="product">
+            <div class="product-photos">
+                <a class="product-photos-large">
+                    @foreach (var item in Model.Photos)
+                    {
+                        if (item.IsMain == true)
+                        {
+                            
+                           <img src="~/assets/Uploads/Carphotos/@item.ImagePath" />
+                        }
+                    }
+                </a>
+                <div class="product-photos-thumbnails_m">
+                    <a href="#">
+                        @foreach (var item in Model.Photos)
+                        {
+                            if (item.IsMain == false)
+                            {
+                                <img src="~/assets/Uploads/Carphotos/@item.ImagePath" />
+                            }
+                        }
+                    </a>
+
+                </div>
+            </div>
+
+
+            <h1 class="product-name product-name-row">@Model.Brand.Name @Model.Model.Name , <span class="nobr">@Model.EngineVolume L</span>, <span class="nobr">@Model.Year il</span>, <span class="nobr">@Model.March @Model.Distance.Name</span></h1>
+            
+            <div class="product-header">
+                <div class="product-price">@Model.Price <span>@Model.Currency.Name</span></div>
+                <div class="seller-info">
+                    <div class="seller-contacts">
+                        <div class="seller-phone">
+                            <svg class="icon-svg icon-svg--phone" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#phone"></use></svg><a class="phone" href="tel:(077) 300-02-25">@Model.User.Phone</a>
+                        </div>
+                        <div class="seller-name"><p>@Model.User.Name</p></div>
+                    </div>
+                </div>
+                <div class="product-statistics">
+                    <p><label for="ad_updated_at">Yeniləndi</label>:@Model.CreatedDate</p>
+                </div>
+            </div>
+            <div class="product-body">
+                <div class="product-properties-container">
+                    <ul class="product-properties">
+                        <li class="product-properties-i">
+                            <label for="ad_region">Şəhər</label>
+                            <div class="product-properties-value">@Model.City.Name</div>
+                        </li>
+                        <li class="product-properties-i">
+                            <label for="ad_make_id">Marka</label>
+                            <div class="product-properties-value">@Model.Brand.Name</div>
+                        </li>
+                        <li class="product-properties-i">
+                            <label for="ad_model">Model</label>
+                            <div class="product-properties-value">@Model.Model.Name</div>
+                        </li>
+                        <li class="product-properties-i">
+                            <label for="ad_reg_year">Buraxılış ili</label>
+                            <div class="product-properties-value">@Model.Year</div>
+                        </li>
+                        <li class="product-properties-i">
+                            <label for="ad_category">Ban növü</label>
+                            <div class="product-properties-value">@Model.Ban.Name</div>
+                        </li>
+                        <li class="product-properties-i">
+                            <label for="ad_color">Rəng</label>
+                            <div class="product-properties-value">@Model.Color.Name</div>
+                        </li>
+                        <li class="product-properties-i">
+                            <label for="ad_engine_volume">Mühərrik</label>
+                            <div class="product-properties-value">@Model.EngineVolume L</div>
+                        </li>
+                        <li class="product-properties-i">
+                            <label for="ad_power">Mühərrikin gücü</label>
+                            <div class="product-properties-value">@Model.EngineStrong a.g.</div>
+                        </li>
+                        <li class="product-properties-i">
+                            <label for="ad_fuel_type">Yanacaq növü</label>
+                            <div class="product-properties-value">@Model.Fuel.Name</div>
+                        </li>
+                        <li class="product-properties-i">
+                            <label for="ad_mileage">Yürüş</label>
+                            <div class="product-properties-value">@Model.March @Model.Distance.Name</div>
+                        </li>
+                        <li class="product-properties-i">
+                            <label for="ad_transmission">Sürətlər qutusu</label>
+                            <div class="product-properties-value">@Model.SpeedBox.Name</div>
+                        </li>
+                        <li class="product-properties-i">
+                            <label for="ad_gear">Ötürücü</label>
+                            <div class="product-properties-value">@Model.Seat.Name</div>
+                        </li>
+
+                        <li class="product-properties-i product-properties_price">
+                            <label for="ad_price">Qiymət</label>
+                            <div class="product-properties-value">
+                                <div class="product-price">@Model.Price <span>@Model.Currency.Name</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+               
+
+                <div class="product-description">
+                    <div class="product-extras">
+                        @foreach (var item in Model.AnnouncementSpesificationItems)
+                        {
+                            <p class="product-extras-i">@item.Spesification.Name</p>
+
+                        }
+
+                    </div>
+                    <h2 class="product-text">@Model.Description</h2>
+
+
+                    <div class="product-actions"><a class="product-actions-i product-expire js-click-expire" asp-controller="home" asp-action="delete"asp-route-id="@Model.Id">Elanı sil</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
