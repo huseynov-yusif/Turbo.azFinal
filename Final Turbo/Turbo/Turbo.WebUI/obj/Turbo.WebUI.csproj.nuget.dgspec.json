@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yusif\\Desktop\\Final Turbo\\Turbo\\Turbo.WebUI\\Turbo.WebUI.csproj": {}
+    "C:\\Users\\Yusif\\Desktop\\New folder\\Turbo.azFinal\\Final Turbo\\Turbo\\Turbo.WebUI\\Turbo.WebUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yusif\\Desktop\\Final Turbo\\Turbo\\Turbo.WebUI\\Turbo.WebUI.csproj": {
+    "C:\\Users\\Yusif\\Desktop\\New folder\\Turbo.azFinal\\Final Turbo\\Turbo\\Turbo.WebUI\\Turbo.WebUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yusif\\Desktop\\Final Turbo\\Turbo\\Turbo.WebUI\\Turbo.WebUI.csproj",
+        "projectUniqueName": "C:\\Users\\Yusif\\Desktop\\New folder\\Turbo.azFinal\\Final Turbo\\Turbo\\Turbo.WebUI\\Turbo.WebUI.csproj",
         "projectName": "Turbo.WebUI",
-        "projectPath": "C:\\Users\\Yusif\\Desktop\\Final Turbo\\Turbo\\Turbo.WebUI\\Turbo.WebUI.csproj",
+        "projectPath": "C:\\Users\\Yusif\\Desktop\\New folder\\Turbo.azFinal\\Final Turbo\\Turbo\\Turbo.WebUI\\Turbo.WebUI.csproj",
         "packagesPath": "C:\\Users\\Yusif\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yusif\\Desktop\\Final Turbo\\Turbo\\Turbo.WebUI\\obj\\",
+        "outputPath": "C:\\Users\\Yusif\\Desktop\\New folder\\Turbo.azFinal\\Final Turbo\\Turbo\\Turbo.WebUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yusif\\AppData\\Roaming\\NuGet\\NuGet.Config",

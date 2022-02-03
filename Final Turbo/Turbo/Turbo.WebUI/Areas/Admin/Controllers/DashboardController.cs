@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MotiCv.AppCode.Extension;
 using MotiCv.Models.FormModels;
 using Turbo.WebUI.Models.DbContexts;
@@ -17,18 +18,42 @@ namespace Turbo.WebUI.Areas.Admin.Controllers
 
     public class DashboardController : Controller
     {
+        readonly TurboDbContext db;
         readonly SignInManager<TurboUser> signinmanager;
         readonly UserManager<TurboUser> usermanager;
          public DashboardController(TurboDbContext db, SignInManager<TurboUser> signinmanager, UserManager<TurboUser> usermanager)
         {
+            this.db = db;
             this.signinmanager = signinmanager;
             this.usermanager = usermanager;
          }
-
-        public IActionResult Index()
+        [Authorize(Policy ="admin.dashboard.index")]
+        public async Task<IActionResult> Index()
         {
-            return View();
-        } 
+            var data =await db.Announcements
+                .Include(a => a.User)
+                .Where(a => a.DeletedByUserId == null).ToListAsync();
+            return View(data);
+        }
+        [HttpGet]
+        [Authorize(Policy = "admin.dashboard.delete")]
+        public IActionResult Delete(int id)
+        {
+            var data = db.Announcements
+                .Include(a=>a.User)
+                .First(a => a.Id == id);
+            return View(data);
+        }
+        [HttpPost]
+        [Authorize(Policy = "admin.dashboard.delete")]
+        public async Task<IActionResult> DeleteConfirm(int id)
+        {
+            var elan = await db.Announcements.FindAsync(id);
+            elan.DeletedByUserId = 1;
+            db.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
+
         [AllowAnonymous]
         [Route("/signin.html")]
         public IActionResult SignIn()

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W69qwNIE/uq4vU1UlWE9XSL26CBEIGaxkIil/uq1fkqon+QcJ4qh6/icZCuVHRrKkk2TfLYH7tGHeSHq2aT9cg==",
+  "dgSpecHash": "uNGTsF5pAsKWqWUbY4860/GF0Q2Pf4B/Xr1W/ju+WqtgJ8B/gW2zODPf8o5N1dQ0ZQh3QS0zlpauYuhXBchngA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yusif\\Desktop\\Final Turbo\\Turbo\\Turbo.WebUI\\Turbo.WebUI.csproj",
+  "projectFilePath": "C:\\Users\\Yusif\\Desktop\\New folder\\Turbo.azFinal\\Final Turbo\\Turbo\\Turbo.WebUI\\Turbo.WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yusif\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Yusif\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
